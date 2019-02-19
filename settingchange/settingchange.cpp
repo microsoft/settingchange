@@ -10,7 +10,7 @@
 int main()
 {
 	wprintf(L"Broadcasting WM_SETTINGCHANGE\r\n");
-	auto lresult = EC_W32(::SendMessageTimeoutW(HWND_BROADCAST, WM_SETTINGCHANGE, NULL, NULL, SMTO_ABORTIFHUNG, 1000, NULL));
+	auto lresult = EC_W32(::SendMessageTimeoutW(HWND_BROADCAST, WM_SETTINGCHANGE, NULL, NULL, SMTO_ABORTIFHUNG, 20000, NULL));
 	if (lresult != ERROR_SUCCESS)
 	{
 		auto err = GetLastError();
