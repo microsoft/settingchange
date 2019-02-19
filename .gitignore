@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+/.vs
+/settingchange/.vs
+/settingchange/x64
+/settingchange/Debug
+/settingchange/Release
